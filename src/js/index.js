@@ -31,3 +31,17 @@ function kys(){
     }
 
 }
+const loadButton = document.querySelector('.load');
+const saveButton = document.querySelector('.save');
+const entryInput = document.querySelector('.textarea');
+
+
+saveButton.addEventListener('click', (e)=>{
+    e.preventDefault();
+    localStorage.setItem('entry', entryInput.value)
+})
+loadButton.addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    entryInput.value = localStorage.getItem('entry')
+})
