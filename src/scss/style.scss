@@ -1,0 +1,121 @@
+:root{
+    --background-color:rgb(34, 1, 0);
+    --background-color-white: white;
+}
+
+
+
+
+body{
+    display: grid;
+    background-color:var(--background-color);
+    margin-right: 42px;
+}
+a{
+    color: rgb(238, 175, 2);
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo{
+    font-size: large;
+    color: rgb(238, 175, 2);
+    border: 2px solid rgb(238, 175, 2);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(54, 42, 0);
+    margin: 10px;
+    padding: 5px;
+}
+.nav{
+    font-size: 20px;
+    color: rgb(238, 175, 2);
+    border: 2px solid rgb(167, 123, 4);
+    width: 100%;
+    display: grid;
+    background-color: rgb(54, 42, 0);
+    padding: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr ;
+    grid-gap: 2px;
+    margin: 10px;
+    
+
+    &__comps{
+        
+        text-align: center;
+        border: 2px solid rgb(190, 125, 3);
+    }
+    &__items{
+        
+        text-align: center;
+    }
+    &__champs{
+        
+        text-align: center;
+    }
+    
+}
+.nav__comps::before{
+    content: "X ";
+    color: rgb(235, 8, 8);
+   
+}
+.nav__comps:after{
+    content: " X";
+    color: rgb(235, 8, 8);
+}
+
+.nav__comps:hover, .nav__items:hover, .nav__champs:hover{
+    background-color: rgb(173, 3, 3);
+}
+
+.ContentBox{
+    margin:10px;
+    border: 2px solid rgba(228, 65, 1, 0.651);
+    width: 100%;
+    height:500px;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px;
+    
+    &__first{
+        border: 2px solid rgba(161, 50, 5, 0.651);
+        padding: 5px;
+    }
+    &__second{
+        border: 2px solid rgba(161, 50, 5, 0.651);
+        padding: 5px;
+    }
+    &__third{
+        border: 2px solid rgba(161, 50, 5, 0.651);
+        padding: 5px;
+    }
+}
+.menu{
+    display: none;
+    &__open{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        background-color: rgb(99, 46, 2);
+        padding: 5px;
+        border: 2px solid rgb(211, 139, 5);
+        margin: 10px;
+        width: 100%;
+    }
+    &__item{
+        color: rgb(252, 252, 252);
+        font-size: 15px;
+    }
+}
+.Main{
+    background-color: honeydew;
+    border: 2px solid wheat;
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+    width: 100%;
+    padding: 5px;
+    
+}
